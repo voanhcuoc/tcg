@@ -1,0 +1,7 @@
+# Ignore backup files
+*~
+\#*\#
+
+# Ignore python cache
+*.py[cod]
+__pycache__
