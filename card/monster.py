@@ -30,3 +30,10 @@ class Monster(Card):
 
     def flip(self):
         self.location.flip(self)
+
+class NormalMonster(Monster):
+    'Normal monster does not have effect'
+    def __init__(self, name, types, attr, descr, location,
+                 attack, defend, star):
+        Monster.__init__(self, name, types, attr, descr, (), location,
+                         attack, defend, star)
